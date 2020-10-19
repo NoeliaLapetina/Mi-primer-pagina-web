@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+  }
+  
+  * {
+    font-family: 'Shadows Into Light Two', cursive;
+  }
+  
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "header header header header"
+      "main main main main"
+      "form form mapa mapa"
+      "box box box box"
+      "footer footer footer footer";
+  }
+  
+  .contenedor .header {
+    grid-area: header;
+    background-color: #FFADE9;
+  }
+  
+  .contenedor .header h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    margin: 30px;
+  }
+  
+  .contenedor .main {
+    grid-area: main;
+    background-color: #FF9CE7;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  
+  .main nav {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  
+  .main nav a {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .main nav a:hover {
+    color: #68376b;
+  }
+  
+  .main nav a i {
+    padding-right: 10px;
+  }
+  .contenedor .mapa {
+    grid-area: mapa;
+    justify-self: center;
+    background-color:#ffccff;
+    border-radius: 10px;
+    height: 90%;
+    padding: 20px;
+  }
+
+  .mapa iframe{
+    height: 80%;
+    width: 100%;
+  }
+
+  .mapa h1 {
+    font-size: 30px;
+    }
+    
+  .contenedor .footer {
+    grid-area: footer;
+    background-color: #FFADE9;
+    text-align: center;
+    font-family: "Amatic SC", cursive;
+    font-size: 40px;
+    padding: 10px;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: deeppink;
+    font-size: 70%;
+  }
+  
+  .footer a:hover {
+    color: white;
+  }
+  
+  .footer p {
+    font-size: 60%;
+    margin-top: 0;
+  }
+  
+  .contenedor .form {
+    display: grid;
+    grid-area: form;
+    justify-self: center;
+    background-color: #ffccff;
+    width: 80%;
+    height: 90%;
+    justify-items: start;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .form h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+  }
+
+select {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+select option {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+label {
+  font-size: 25px;
+  font-weight: 700;
+  width: 30%;
+  display: inline-block;
+  text-align: right;
+}
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form {
+    width: 100%;
+  }
+  
+  input {
+    font: 1em sans-serif;
+    width: 65%;
+    border: 1px solid #999;
+    margin-top: 10px;
+  }
+
+  textarea {
+    width: 65%;
+    margin-top: 12px;
+  }
+
+  input:focus, textarea:focus {
+    border-color: #000;
+  }
+  
+  textarea {
+    vertical-align: top;
+    height: 5em;
+  }
+  
+button {
+    align-self: center;
+    font-size: 30px;
+    width: 50%;
+    margin: 20px auto;
+    display: block;
+    background-color: white;
+    color: #FF9CE7;
+}
+
+  .contenedor .box {
+    display: grid;
+    grid-area: box;
+    justify-self: center;
+    justify-items: normal;
+    text-align: center;
+    background-color: #ffccff;
+    color: black;
+    margin: 10px 20px 20px 20px;
+    padding: 20px;
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  
+  .box:hover {
+    transform: scale(1.09, 1.09);
+  }
+  
+  .box a {
+    text-decoration: none;
+  }
+  
+  .box a:hover {
+    color: #fa58f4;
+  }
+  
+  .box h1 {
+    font-size: 180%;
+  }
+
+  strong h1 {
+    margin: 20px;
+    font-size: 50px;
+  }
+  p {
+    margin: 20px;
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .contenedor {
+      overflow: hidden;
+      grid-template-areas:
+      "header header header header"
+      "main main main main"
+      "form form form form"
+      "mapa mapa mapa mapa"
+      "box box box box"
+      "footer footer footer footer";
+  }
+
+  .contenedor .form{
+    margin-bottom: 40px;
+    padding: 10px;
+    width: 90%;
+
+  }
+
+  .form h1 {
+    font-size: 30px;
+  }
+  form {
+    height: 30%;
+  }
+label{
+font-size: 20px;
+}
+
+.contenedor .mapa {
+  width: 85%;
+  margin-bottom: 20px;
+}
+.contenedor .mapa p {
+  font-size: 30px;
+}
+.mapa iframe {
+  height: 60%;
+  width: 100%;
+}
+
+.mapa h1 {
+  text-align: center;
+  font-size: 30px;
+}
+.contenedor .header {
+  grid-area: header;
+  background-color: #FFADE9;
+  padding: 0;
+}
+
+.contenedor .header h1 {
+  font-display: fallback;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 200%;
+}
+
+.main nav a {
+  font-size: 110%;
+}
+
+.contenedor .box {
+  margin: 20px;
+}
+.box h1 {
+  font-size: 180%;
+}
+.contenedor .footer {
+  font-size: 20px;
+  padding: 10px;
+}
+}

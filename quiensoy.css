@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+  }
+  
+  * {
+    font-family: 'Shadows Into Light Two', cursive;
+  }
+  
+  .contenedor {
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      "main main main main"
+      "imagen imagen imagen imagen"
+      "texto texto texto texto"
+      "footer footer footer footer";
+  }
+  
+  .contenedor .header {
+    grid-area: header;
+    background-color: #FEEEB3;
+  }
+  
+  .contenedor .header h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    margin: 30px;
+  }
+  
+  .contenedor .main {
+    grid-area: main;
+    background-color: #FEE482;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  
+  .main nav {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  
+  .main nav a {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .main nav a:hover {
+    color: #68376b;
+  }
+  
+  .main nav a i {
+    padding-right: 10px;
+  }
+
+  .contenedor .imagen{
+    grid-area: imagen;
+    justify-self: center;
+  }
+
+  .imagen img {
+    height: 200px;
+    width: 200px;
+  }
+  .contenedor .texto {
+    grid-area: texto;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .contenedor .footer {
+    grid-area: footer;
+    background-color: #FEEEB3;
+    text-align: center;
+    font-family: "Amatic SC", cursive;
+    font-size: 40px;
+    padding: 10px;
+    bottom: 0;
+  }
+
+  .footer a {
+    text-decoration: none;
+    color: sandybrown;
+    font-size: 70%;
+  }
+  
+  .footer a:hover {
+    color: white;
+  }
+  
+  .footer p {
+    font-size: 60%;
+    margin-top: 0;
+  }
+
+  strong h1 {
+    margin: 20px;
+    font-size: 50px;
+  }
+  p {
+    margin: 20px;
+    font-size: 40px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contenedor {
+      display: grid;
+      width: 100%;
+      margin: 0;
+      grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "imagen imagen imagen imagen"
+        "texto texto texto texto"
+        "footer footer footer footer";
+    }
+
+    .contenedor .header {
+      grid-area: header;
+      background-color: #FEEEB3;
+      padding: 0;
+    }
+  
+    .contenedor .header h1 {
+      font-display: fallback;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      font-size: 200%;
+    }
+
+    .main nav a {
+      font-size: 110%;
+    }
+
+    .contenedor .imagen p {
+      font-size: 20px;
+    }
+
+    .contenedor .footer {
+      font-size: 20px;
+      padding: 10px;
+    }
+
+    .imagen img {
+      height: 100px;
+      width: 100px;
+    }
+
+    .contenedor .texto {
+      font-size: 15px;
+    }
+  }
