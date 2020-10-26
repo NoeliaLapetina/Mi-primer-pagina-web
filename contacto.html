@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
+<!-- head -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width"/>
@@ -10,56 +10,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2bf93905c9.js" crossorigin="anonymous"></script>
 </head>
+<!-- body -->
 <body>
     <div class="contenedor">
+        <!-- header -->
         <header class="header">
             <h1>Comer para vivir</h1>
         </header>
-        <div class="main">
-            <nav>
+        <!-- barra de navegacion -->
+        <div class="nav">
+            <nav class="col col-12">
                 <a href="index.html"><i class="fas fa-play"></i>Inicio</a>
                 <a href="recetas.html"><i class="fas fa-utensils"></i>Recetas</a>
                 <a href="quiensoy.html"><i class="fas fa-question"></i>Quien soy</a>
                 <a href="contacto.html"><i class="far fa-envelope"></i>Contacto</a>
             </nav>
         </div>
-        <div class="form">
-            <h1>Enviame una consulta o sugerencia!</h1>
+        <!-- formulario -->
+        <div id="form">
+            <h2>Enviame una consulta o sugerencia!</h2>
             <form>
             <label>Nombre y Apellido</label>
-            <input type="text">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre Apellido">
             <label>Email</label>
-            <input type="email">
+            <input type="email" id="email" name="email" class="email" placeholder="ejemplo@mail.com">
             <label>Telefono</label>
-            <input type="number">
+            <input type="number" id="number" name="telefono" placeholder="011 12345678">
             <label>Mensaje</label>
-            <textarea></textarea>
-            <button type="submit">Enviar</button>
+            <textarea placeholder="Deje su mensaje..." id="mensaje"></textarea>
+            <button type="submit" class="col col-4">Enviar</button>
             </form>
         </div>
-
-
-        <div class="box">
-            <h1>O si prefieres puedes seguirme en <a href="https://www.instagram.com/comerparavivir_/">Instagram</a> donde subo contenido a diario!</h1>
-        </div>
-
+        <!-- div que contiene mapa -->
         <div class="mapa">
-        <h1>Puedes conseguir nuestro libro de recetas en:</h1>
+        <h2>Puedes conseguir nuestro libro de recetas en:</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52537.673274874775!2d-58.50068382393877!3d-34.614159184092536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6c655bfad4461a7f!2sYenny!5e0!3m2!1ses-419!2sar!4v1602197067333!5m2!1ses-419!2sar" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
         </div>
-        <footer class="footer">
+        <!-- boton para seguir en instagram -->
+        <div class="box">
+            <h2>O si prefieres puedes seguirme en <a href="https://www.instagram.com/comerparavivir_/">Instagram</a> donde subo contenido a diario!</h2>
+        </div>
+<!-- footer -->        
+<footer class="footer">
             <a href="https://www.instagram.com/comerparavivir_/" target="_blank" <i class="fab fa-instagram"></i></a>
-            <a href="https://www.instagram.com/comerparavivir_/" target="_blank" <i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/comerparavivir_/" target="_blank" <i class="fab fa-pinterest"></i></a>
-            <a href="https://www.instagram.com/comerparavivir_/" target="_blank" <i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/comerparavivir_/" target="_blank" <i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank" <i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank" <i class="fab fa-pinterest"></i></a>
+            <a href="#" target="_blank" <i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank" <i class="fab fa-facebook-f"></i></a>
             <p>Derechos reservados @2020</p>
         </footer>
-
     </div>
-
-
-
+<!-- scripts -->
+<script src="main.js"></script>
 </body>
-
 </html>

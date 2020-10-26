@@ -1,62 +1,57 @@
 body {
   margin: 0;
 }
-
 * {
   font-family: 'Shadows Into Light Two', cursive;
 }
-
+/*contenedor*/
 .contenedor {
   display: grid;
+  min-height: 100vh;
   grid-template-areas:
     "header header header header"
-    "main main main main"
+    "nav nav nav nav"
     "banner banner banner banner"
     "footer footer footer footer";
 }
-
+/*header*/
 .contenedor .header {
   grid-area: header;
   background-color: #C5FFCB;
 }
-
 .contenedor .header h1 {
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 100px;
   margin: 30px;
 }
-
-.contenedor .main {
-  grid-area: main;
+/*barra de navegacion*/
+.contenedor .nav {
+  grid-area: nav;
   background-color: #84E8A7;
   margin: 20px;
   border-radius: 5px;
 }
-
-.main nav {
+.nav nav {
   display: flex;
   height: 50px;
   align-items: center;
   text-align: center;
   justify-content: space-evenly;
 }
-
-.main nav a {
+.nav nav a {
   text-decoration: none;
   font-size: 30px;
   color: white;
   font-weight: 700;
 }
-
-.main nav a:hover {
+.nav nav a:hover {
   color: #68376b;
 }
-
-.main nav a i {
+.nav nav a i {
   padding-right: 10px;
 }
-
+/*banner*/
 .contenedor .banner {
   grid-area: banner;
   position: relative;
@@ -72,7 +67,6 @@ body {
   object-position: top;
   animation: banner 12s infinite linear;
 }
-
 .banner-content {
   width: 100%;
   height: 100%;
@@ -110,7 +104,7 @@ body {
     background-image: url(./fotos/yogur.jpg);
   }
 }
-
+/*footer*/
 .contenedor .footer {
   grid-area: footer;
   background-color: #C5FFCB;
@@ -119,49 +113,49 @@ body {
   font-size: 40px;
   padding: 10px;
 }
-
 .footer a {
   text-decoration: none;
   color: forestgreen;
   font-size: 70%;
 }
-
 .footer a:hover {
   color: white;
 }
-
 .footer p {
   font-size: 60%;
   margin-top: 0;
 }
-
+/*resposive*/
 @media screen and (max-width: 768px) {
+  /*contenedor*/
   .contenedor {
     display: grid;
     width: 100%;
     margin: 0;
     grid-template-areas:
       "header header header header"
-      "main main main main"
+      "nav nav nav nav"
       "banner banner banner banner"
       "footer footer footer footer";
   }
-
   .contenedor .header {
     grid-area: header;
     background-color: #C5FFCB;
     padding: 0;
   }
-
   .contenedor .header h1 {
     font-display: fallback;
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 200%;
   }
-
-  .main nav a {
+/*barra de navegacion*/
+  .nav nav a {
     font-size: 110%;
+  }
+  .banner-content {
+  font-size: 100%;
+  /*footer*/
   }
   .contenedor .footer {
     font-size: 20px;
